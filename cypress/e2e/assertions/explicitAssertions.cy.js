@@ -79,7 +79,7 @@ describe('Cheking styles', () => {
     cy.get('.navbar-brand') //find the web elem
     .should('have.class', 'navbar-brand') // find calss with value, returned ELEMENT
     .and('be.visible') //returned ELEMENT
-    .and('have.attr', 'href') //find attribute, retened value of attribute
+    .and('have.attr', 'href') //find attribute, reterned value of attribute
     .and('include', '/') // take this attribute and find in them value
 
     cy.get('.dropdown-menu li')
