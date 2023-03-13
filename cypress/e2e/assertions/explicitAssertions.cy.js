@@ -1,7 +1,7 @@
 ///<reference types="cypress"/> 
 
 describe('template spec', () => {
-  it('Implicit Assertions', () => {
+  it('Explicit Assertions', () => {
     cy.visit('http://localhost:8080/commands/assertions');
     cy.get('.table.table-bordered.assertion-table tr')
     .eq(3)
@@ -77,9 +77,9 @@ describe('Cheking styles', () => {
     .and('eq', 'rgb(223, 240, 216)')
 
     cy.get('.navbar-brand') //find the web elem
-    .should('have.class', 'navbar-brand') // find calss with value
-    .and('be.visible')
-    .and('have.attr', 'href') //find attribute
+    .should('have.class', 'navbar-brand') // find calss with value, returned ELEMENT
+    .and('be.visible') //returned ELEMENT
+    .and('have.attr', 'href') //find attribute, reterned value of attribute
     .and('include', '/') // take this attribute and find in them value
 
     cy.get('.dropdown-menu li')
