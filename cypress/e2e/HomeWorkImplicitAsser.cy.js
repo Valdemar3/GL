@@ -12,7 +12,9 @@ describe ('Test suite Autom', () => {
                                         justifyContent: 'flex-start',
                                         alignItems: 'flex-start'
                                     }
+                                    
     },
+    //{same inputs with diferent datas }
     //alert-triangle - wanring
     ];
 
@@ -28,7 +30,8 @@ describe ('Test suite Autom', () => {
                             time, expTime,
                             toastrType, expToastrType,
                             expIconImage, expColor,
-                            expPositionOnScreen, }) => {
+                            expPositionOnScreen, }
+                            ) => {
             it(`Choosing Position of Toast ${position}`, () => {
                     cy.get(`div.form-group:contains("Position:") nb-select`).click()
                     cy.get(`ul nb-option[ng-reflect-value=${position}]`).click()
@@ -134,7 +137,7 @@ describe ('Test suite Autom', () => {
                     .should('be.visible')
                     .and('contain.text', `${expTitle}`)
                     .and('contain.text', `${expContent}`)
-                    .and('have.css', 'background-color', `${expColor}`)   
+                    .and('have.css', 'background-color', `${expColor}`)
                 cy.get(`[data-name=${expIconImage}]`)
                     .should('exist')
                 cy.get('div.toastr-overlay-container')
