@@ -1,3 +1,5 @@
+//import * as inData from '../fixtures/toastData.json'
+
 describe ('Test suite Autom', () => {
 
     const inData = [
@@ -26,6 +28,8 @@ describe ('Test suite Autom', () => {
     //{same inputs with diferent datas }
     //alert-triangle - wanring
     ];
+
+  
 
     beforeEach('Visit link befor All', () => {
         cy.visit('https://sanitarskyi-ngx-admin.herokuapp.com/')

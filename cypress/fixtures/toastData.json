@@ -1,0 +1,24 @@
+[
+    {
+      "input": {
+        "position": "top-left",
+        "title": "Asshole!",
+        "content": "Fucking content",
+        "time": "200000",
+        "toastrType": "info"
+      },
+      "exp": {
+        "expPosition": "top-left",
+        "expTitle": "Asshole!",
+        "expContent": "Fucking content",
+        "expTime": "200000",
+        "expToastrType": "info",
+        "expIconImage": "question-mark",
+        "expColor": "rgb(4, 149, 238)",
+        "expPositionOnScreen": {
+          "justifyContent": "flex-start",
+          "alignItems": "flex-start"
+        }
+      }
+    }
+  ]
