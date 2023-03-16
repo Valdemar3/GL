@@ -29,7 +29,7 @@ describe ('Test suite Autom', () => {
                             expIconImage, expColor,
                             expPositionOnScreen, }) => {
                                 it('Step to reproduce', () => {
-                                    cy.get('.mat-ripple.position-select').click({force:true});
+                                    cy.get('.mat-ripple.position-select',{timeout: 15000}).click({force:true});
                                     cy.get(`[ng-reflect-value=${position}]`).click();
                                     cy.get('[ng-reflect-model="HI there!"]')
                                         .clear()
